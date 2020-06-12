@@ -1,0 +1,236 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: Lato;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: fixed;
+  width: 150px;
+  height: 100vh;
+  background-color: white;
+  z-index: 2;
+  border-right: 1px dotted darkcyan;
+}
+.nav li{
+ display: flex;
+ transition: background-color 1s;
+}
+.inactive {
+  text-decoration: none;
+  color: darkcyan;
+  padding: 20px ;
+  width: 200px;
+}
+.inactive:hover {
+  color: white;
+}
+
+.phrase {
+  z-index: 1;
+  position: absolute;
+  top: 100px;
+  width: 49%;
+  color: #92bebe;
+  padding: 4px;
+  margin: 0px 20%;
+  background-color: darkcyan;
+  transform: skewX(-5deg) rotate(-5deg);
+  text-align: center;
+  
+  -webkit-text-stroke: 2px darkcyan;
+  box-sizing: border-box;
+  opacity: 0.9;
+}
+.phrase > h1 {
+
+  font-size: 7vw;
+  font-weight: 900;
+  border-bottom: 5px solid white;
+}
+.banner {
+  width: 100%;
+  height: 30px;
+  border-top: 5px solid darkcyan;
+  
+}
+._active {
+  color: white;
+  background-color: darkcyan;
+  
+  text-decoration: none;
+}
+.nav li:hover {
+  background-color: rgb(58, 163, 163);
+  color: white;
+  cursor: pointer;
+}
+.body {
+  margin-left: 150px;
+  color: rgb(86, 104, 109);
+  text-align: justify;
+}
+.contain {
+  padding: 100px 10% 200px 10%;
+}
+.footer {
+  position: fixed;
+  color: white;
+  padding: 20px 0px;
+  background-color: darkcyan;
+  bottom: 0px;
+  margin-left: 150px;
+  width: calc(100% - 150px);
+  text-align: center;
+  z-index: 200;
+}
+#particles-js {
+  background-color: #F6F8FA;
+  background-image: url(https://i.postimg.cc/FsGhVc3p/Screenshot-2020-05-30-at-14-42-34.png);
+  background-repeat: repeat-x;
+  background-size:  auto 70%;
+  background-position: bottom;
+  width: 100%;
+  max-height: 390px;
+  min-height: 200px;
+  overflow: hidden;
+  
+}
+.ornate {
+  background-image: url(https://www.pennington.com/-/media/images/pennington-na/us/blog/seed/all-you-need-to-know-about-zoysia-grass/zoysia-header.jpg?h=480&la=en&w=1140&hash=E78389530F53CF0D0A44E454E27F379D5801D760);
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.banner img{
+  height: 150px;
+  width: 150px;
+  
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  border: 5px solid darkcyan;
+  position: relative;
+  top: -80px;
+  left: 10%;
+}
+.article p{
+  padding: 20px 0;
+}
+.signature {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.signature img{
+  width: 150px;
+  
+}
+.grid-contain {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  background-color:white;
+  padding: 0px;
+  height: 110vh;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  
+}
+.grid-item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.grid-item > p {
+  position: absolute;
+  z-index: 100;
+  color: #fff;
+  padding-top: 120px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.342);
+}
+.grid-item > p:hover {
+  background-color: rgba(252, 252, 252, 0.342);
+  color: black;
+}
+
+.logo img{
+  float: left;
+  width: 90px;
+  padding: 10px;
+}
+.myForm {
+  color: darkcyan;
+  width: 50%;
+  margin-left: 25%;
+}
+.myForm p {
+  padding: 30px 0 5px;
+  width: 100%;
+  text-align: right;
+}
+@media only screen and (max-width: 1000px) {
+  .myForm {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+
+input, textarea, select {
+  border: 1px solid darkcyan;
+  padding: 10px;
+  width: 100%;
+  color: darkcyan;
+  box-sizing: border-box;
+  background-color: rgb(209, 235, 235);
+  outline: none;
+  border-radius: 4px;
+}
+.btn{
+  color: darkcyan;
+  background-color: #ffffff; 
+  transition: background-color 1s;
+}
+.btn:hover {
+  color: white;
+  background-color: darkcyan; 
+}
+.article div {
+  padding: 20px 0px;
+  border-top: 1px dotted grey;
+}
+.name {
+  color: rgb(58, 97, 141);
+  font-weight: 800;
+}
+.puffy {
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  border: 1px solid darkcyan;
+  outline: none;
+}
+.map iframe {
+  border: 1px solid darkcyan;
+  width: 100%;
+  box-sizing: border-box;
+  height: 400px;
+}
